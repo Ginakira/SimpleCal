@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(SimpleCal VERSION 1.0.0 LANGUAGES CXX)
+project(SimpleCal VERSION 1.1.0 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -34,7 +34,8 @@ configure_file(
 
 set(PROJECT_SOURCES
         main.cpp
-        src/mainwindow.cc include/mainwindow.h
+        src/mainwindow.cc
+        include/mainwindow.h
         src/ui/mainwindow.ui
         src/basic_cal_widget.cc
         include/basic_cal_widget.h
@@ -51,6 +52,9 @@ set(PROJECT_SOURCES
         include/settings.h
         include/config.h.in
         include/config.h
+        src/settings_dialog.cc
+        include/settings_dialog.h
+        src/ui/settings_dialog.ui
         )
 
 if (${QT_VERSION_MAJOR} GREATER_EQUAL 6)
