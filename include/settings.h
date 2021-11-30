@@ -33,8 +33,6 @@ public:
     static void reset_bg_color(Settings::BG_COLOR color);
 
 private:
-    static QSettings settings_;
-
     static const char *bg_keys_[];
 };
 
